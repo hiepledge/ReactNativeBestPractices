@@ -63,16 +63,30 @@ Now that you have successfully run the app, let's modify it.
 
 You've successfully run and modified your React Native App. :partying_face:
 
+
+https://github.com/hiepledge/ReactNativeBestPractices/assets/118787618/934a21ab-cd3b-4e53-a755-027ab2389f02
+
+
+
+https://github.com/hiepledge/ReactNativeBestPractices/assets/118787618/ef281bd9-5fbe-4169-aad2-93ebfceb01b1
+
+
+
+https://github.com/hiepledge/ReactNativeBestPractices/assets/118787618/b66d6256-71b9-4f33-8c60-0c6a4928941c
+
+
+
+https://github.com/hiepledge/ReactNativeBestPractices/assets/118787618/10df3d44-568c-4f46-b5bc-bbe59d053600
+
+
+
+https://github.com/hiepledge/ReactNativeBestPractices/assets/118787618/d8aa39b8-dff7-4a95-bdcd-67e2360e6225
+
+
+
+https://github.com/hiepledge/ReactNativeBestPractices/assets/118787618/857eba4f-3ff4-4bf2-9f63-455aac3d9ec2
+
+
 # Components
 
-[animated-bottom-sheet.mp4](assets-preview%2Fanimated-bottom-sheet.mp4)
 
-[animated-date-picker-bottom-sheet.mp4](assets-preview%2Fanimated-date-picker-bottom-sheet.mp4)
-
-[animated-flatlist-layout.mp4](assets-preview%2Fanimated-flatlist-layout.mp4)
-
-[animated-otp-input.mp4](assets-preview%2Fanimated-otp-input.mp4)
-
-[animated-picker.mp4](assets-preview%2Fanimated-picker.mp4)
-
-[animated-typing.mp4](assets-preview%2Fanimated-typing.mp4)

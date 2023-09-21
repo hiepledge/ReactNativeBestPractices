@@ -87,6 +87,10 @@ https://github.com/hiepledge/ReactNativeBestPractices/assets/118787618/d8aa39b8-
 https://github.com/hiepledge/ReactNativeBestPractices/assets/118787618/857eba4f-3ff4-4bf2-9f63-455aac3d9ec2
 
 
+
+https://github.com/hiepledge/ReactNativeBestPractices/assets/118787618/fd1fc3bf-94f7-4071-8fdb-336403787b7c
+
+
 # Components
 
 

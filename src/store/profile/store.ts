@@ -6,7 +6,7 @@ const getProfile = (): Promise<any> => {
   return new Promise(resolve => {
     setTimeout(() => {
       const data = {
-        id: 1,
+        id: '5',
         name: 'hiepledge',
         bio: 'mobile developer',
       };
@@ -56,4 +56,8 @@ export const ProfileStore = types
       __DEV__ && console.log('ProfileStore created');
     },
   }))
-  .views(self => ({}));
+  .views(self => ({
+    get getName() {
+      return self.profileInfo?.name || '';
+    },
+  }));

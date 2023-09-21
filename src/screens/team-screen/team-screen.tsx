@@ -1,5 +1,6 @@
 import React, {useEffect, useRef} from 'react';
 import {
+  Alert,
   FlatList,
   RefreshControl,
   SafeAreaView,
@@ -26,7 +27,12 @@ const TeamScreen = observer(props => {
   }, []);
 
   useEffect(() => {
-    console.log('selectTeam', teamStore.selectTeam);
+    if (teamStore.selectTeam) {
+      Alert.alert(
+        'Selected',
+        JSON.stringify(teamStore.selectTeam, '', '').replace(/[{,}]/g, ''),
+      );
+    }
   }, [teamStore.selectTeam]);
 
   return (
@@ -35,9 +41,7 @@ const TeamScreen = observer(props => {
         <FlatList
           ListHeaderComponent={
             <View style={{backgroundColor: 'lightgrey'}}>
-              <Text style={{textAlign: 'center'}}>
-                {JSON.stringify(profileStore.profileInfo)}
-              </Text>
+              <Text style={{textAlign: 'center'}}>{profileStore.getName}</Text>
             </View>
           }
           refreshControl={

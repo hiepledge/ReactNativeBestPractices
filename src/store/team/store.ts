@@ -8,31 +8,31 @@ const getTeam = (): Promise<any> => {
     setTimeout(() => {
       const data = [
         {
-          id: 2,
+          id: '2',
           region: 'HCMC',
           name: 'S',
           imageUrl: null,
           capacity: null,
           strategy: 'rebuilding',
           city: {
-            id: 1,
+            id: '1',
             name: 'HCMC',
           },
         },
         {
-          id: 3,
+          id: '3',
           region: 'HCMC3',
           name: 'S',
           imageUrl: null,
           capacity: 1000,
           strategy: 'rebuilding',
           city: {
-            id: 3,
+            id: '3',
             name: 'HCMC3',
           },
         },
         {
-          id: 1,
+          id: '1',
           city: null,
           region: 'HCMC',
           name: 'F',

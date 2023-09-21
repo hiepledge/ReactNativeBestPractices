@@ -9,7 +9,7 @@ const LoadingView = observer(() => {
   const {teamStore} = useRootStore();
   return (
     <AnimatedBottomToast
-      showToast={teamStore.status !== ''}
+      showToast={teamStore.status !== null}
       status={teamStore.status}
     />
   );

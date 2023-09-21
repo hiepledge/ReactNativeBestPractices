@@ -20,6 +20,18 @@ const getTeam = (): Promise<any> => {
           },
         },
         {
+          id: 3,
+          region: 'HCMC3',
+          name: 'S',
+          imageUrl: null,
+          capacity: 1000,
+          strategy: 'rebuilding',
+          city: {
+            id: 3,
+            name: 'HCMC3',
+          },
+        },
+        {
           id: 1,
           city: null,
           region: 'HCMC',
@@ -45,7 +57,10 @@ const wait = (): Promise<void> => {
 export const TeamStore = types
   .model('team', {
     teams: types.array(Team),
-    status: types.enumeration(['pending', 'loading', 'done', 'error', '']),
+    selectTeam: types.maybe(types.reference(Team)),
+    status: types.maybeNull(
+      types.enumeration(['pending', 'loading', 'done', 'error']),
+    ),
   })
   .actions(self => ({
     setTeams: (teams: typeof self.teams) => {
@@ -58,14 +73,18 @@ export const TeamStore = types
       self.status = 'loading';
       try {
         const response = yield getTeam();
+
         self.teams = response;
       } catch (e: any) {
         Alert.alert(e ? e.message : 'An error occurred');
       }
       self.status = 'done';
       yield wait();
-      self.status = '';
+      self.status = null;
     }),
+    setSelectedTeam: (id: number) => {
+      self.selectTeam = id as unknown as typeof self.selectTeam;
+    },
   }))
   .actions(self => ({
     /**
@@ -77,7 +96,7 @@ export const TeamStore = types
     },
   }))
   .views(self => ({
-    get sortedTeams() {
+    get getSortedTeams() {
       return self.teams.slice().sort((a, b) => {
         return a.id < b.id ? -1 : 1;
       });

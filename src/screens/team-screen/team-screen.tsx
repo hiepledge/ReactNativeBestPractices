@@ -1,35 +1,55 @@
-import React, {useRef} from 'react';
-import {FlatList, RefreshControl, SafeAreaView, Text, View} from 'react-native';
+import React, {useEffect, useRef} from 'react';
+import {
+  FlatList,
+  RefreshControl,
+  SafeAreaView,
+  Text,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 import {observer} from 'mobx-react';
 
 import useRootStore from '../../hooks/use-root-store';
 import LoadingView from './loading-view';
 
 const TeamScreen = observer(props => {
+  const {teamStore, profileStore} = useRootStore();
+
   if (__DEV__) {
     const ref = useRef(0);
     ref.current += 1;
     console.log('team screen', 'render: ', ref.current);
   }
 
-  const {teamStore} = useRootStore();
-
   const onRefresh = React.useCallback(() => {
     teamStore.getTeams();
   }, []);
+
+  useEffect(() => {
+    console.log('selectTeam', teamStore.selectTeam);
+  }, [teamStore.selectTeam]);
 
   return (
     <View style={{flex: 1}}>
       <SafeAreaView style={{flex: 1}}>
         <FlatList
+          ListHeaderComponent={
+            <View style={{backgroundColor: 'lightgrey'}}>
+              <Text style={{textAlign: 'center'}}>
+                {JSON.stringify(profileStore.profileInfo)}
+              </Text>
+            </View>
+          }
           refreshControl={
             <RefreshControl refreshing={false} onRefresh={onRefresh} />
           }
-          data={teamStore.sortedTeams}
+          data={teamStore.getSortedTeams}
           renderItem={({item}) => (
-            <View style={{padding: 10}}>
+            <TouchableOpacity
+              onPress={() => teamStore.setSelectedTeam(item.id)}
+              style={{padding: 10}}>
               <Text>{JSON.stringify(item, '', '\t')}</Text>
-            </View>
+            </TouchableOpacity>
           )}
           keyExtractor={(t, index) => (t.id || index).toString()}
           ItemSeparatorComponent={

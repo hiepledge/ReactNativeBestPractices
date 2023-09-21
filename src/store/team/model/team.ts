@@ -3,7 +3,7 @@ import {types} from 'mobx-state-tree';
 import {City} from './city';
 
 export const Team = types.model({
-  id: types.number,
+  id: types.identifierNumber,
   city: types.maybeNull(City),
   region: types.maybeNull(types.string),
   name: types.maybeNull(types.string),

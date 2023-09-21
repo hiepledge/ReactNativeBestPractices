@@ -10,7 +10,7 @@ import Animated, {
 
 type AnimatedBottomToast = {
   showToast: boolean;
-  status: string | 'done';
+  status: string | 'done' | null;
 };
 
 const AnimatedBottomToast: FC<AnimatedBottomToast> = ({showToast, status}) => {
@@ -51,7 +51,7 @@ const AnimatedBottomToast: FC<AnimatedBottomToast> = ({showToast, status}) => {
               color: 'white',
               fontSize: 15,
             }}>
-            {status.toUpperCase()}
+            {status?.toUpperCase()}
           </Animated.Text>
         </Animated.View>
       )}

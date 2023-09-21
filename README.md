@@ -91,6 +91,16 @@ https://github.com/hiepledge/ReactNativeBestPractices/assets/118787618/857eba4f-
 https://github.com/hiepledge/ReactNativeBestPractices/assets/118787618/fd1fc3bf-94f7-4071-8fdb-336403787b7c
 
 
-# Components
+# Mobx
+![Screenshot 2023-09-20 at 12 46 43](https://github.com/hiepledge/ReactNativeBestPractices/assets/118787618/26f46de2-f2d3-44c4-92e3-b6ddf9e2cbfc)
+![Screenshot 2023-09-20 at 12 46 37](https://github.com/hiepledge/ReactNativeBestPractices/assets/118787618/7719a0c3-728a-4a50-bf77-fd5942300ccb)
 
+![Screenshot 2023-09-20 at 12 30 43](https://github.com/hiepledge/ReactNativeBestPractices/assets/118787618/43150384-31c0-4df7-835a-2e2ebb896c5f)
 
+![Screenshot 2023-09-20 at 12 30 27](https://github.com/hiepledge/ReactNativeBestPractices/assets/118787618/9f001e56-2541-4cba-95b1-0560f13e035d)
+![Screenshot 2023-09-20 at 12 30 56](https://github.com/hiepledge/ReactNativeBestPractices/assets/118787618/1abd11cd-e7b3-4be1-a996-3d9d4058d0e5)
+![Screenshot 2023-09-20 at 12 31 12](https://github.com/hiepledge/ReactNativeBestPractices/assets/118787618/c481f3df-fceb-4e90-b6c7-8da00f7ba637)
+![Screenshot 2023-09-20 at 12 31 27](https://github.com/hiepledge/ReactNativeBestPractices/assets/118787618/705f1760-299e-45ba-a951-a6ce9831214d)
+![Screenshot 2023-09-20 at 12 31 39](https://github.com/hiepledge/ReactNativeBestPractices/assets/118787618/5cb971c6-3c98-4f10-b79b-cea91589007a)
+![Screenshot 2023-09-20 at 12 36 05](https://github.com/hiepledge/ReactNativeBestPractices/assets/118787618/78a39484-cc29-4d12-83b0-d2a0e218ade3)
+![Screenshot 2023-09-20 at 12 38 46](https://github.com/hiepledge/ReactNativeBestPractices/assets/118787618/0875148e-d9e5-431e-ad2b-99d6934943c2)
